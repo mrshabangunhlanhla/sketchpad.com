@@ -1,0 +1,144 @@
+body {
+	font-family: Arial;
+	text-align: center;
+    padding: 0;
+    margin: 0;
+	overscroll-behavior: none;
+	
+}
+
+#root {
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+	background: #d8e1ef;
+    box-sizing: border-box;
+}
+#file  {
+	display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+	
+}
+#file li {
+	position: relative;
+	margin: auto;
+}
+#file button {
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+#filename {
+	width: 92px;
+    border: 0;
+}
+#filelist {
+	display: none;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    overflow: auto;
+    width: 150px;
+    height: 200px;
+    padding: 0;
+    background: #d8e1efad;
+    list-style: none;
+    margin: auto;
+    box-sizing: border-box;
+}
+#filelist li {
+	cursor:pointer;
+	padding: 0.5rem;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+}
+#home {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 1rem;
+	box-sizing: border-box;
+}
+
+#controls {
+	width: 100%;
+    display: flex;
+    background: linear-gradient(45deg, #f1f3f4, #64ebc64d);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+#controls >div {
+	padding: 0.5rem;
+	border-right: 1px solid #8080809e;
+	box-sizing: border-box;
+	
+}
+label {
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+input:hover , button:hover {
+	transition: 0.25s linear;
+	box-shadow: 5px 5px grey;
+}
+input[type=color] {
+	width: 25px;
+    height: 30px;
+    display: inline-block;
+    margin: auto;
+    border: 0;
+    border-radius: 0.125rem;
+    padding: 0;
+    box-shadow: 0px 0px 5px grey;
+    box-sizing: border-box;
+}
+input[type=number] {
+	width: 35px;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+#app {
+	flex: 1;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#screen {
+	width: 100%;
+    display: block;
+    padding: 0.5rem;
+    height: 100%;
+    box-sizing: border-box;
+	touch-action: none;
+}
+#gameCanvas {
+	cursor: cell;
+	box-shadow: 0px 0px 16px grey;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	background: #fff;
+	touch-action: none;
+}

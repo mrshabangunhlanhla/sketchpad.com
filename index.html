@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=0.75">
+  <title>Sketchpad</title>
+  <!-- <script src="tfjs@latest.js"> </script> -->
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root">
+    <div id="app">
+    
+      <div
+        id="controls"
+        >
+        <ul id=file>
+          <li>
+            <button id="newfilebtn">New</button>
+          </li>
+          <li>
+            <button id="openfilebtn">Open</button>
+            
+            <ul id="filelist">
+            
+            </ul>
+            
+          </li> 
+          <li>
+            <button id="savefilebtn">Save</button>
+          </li> 
+          <li>
+            <button id="undobtn">Undo</button>
+          </li>
+          <li>
+            <input id="filename" type="text" value="untitled" placeholder="File Name" />
+          </li>
+          
+        
+        </ul>
+        <div id=home>
+          
+          <label>Color <input id="colorbtn" type="color" /></label>
+          <label>Size <input id="sizebtn" type="number" value="1" /></label>
+          
+        </div>
+      </div>
+      <div id="screen">
+        <canvas 
+          id="gameCanvas" 
+          width="400" 
+          height="400" 
+          >
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <script src="Pen.js"></script>
+  <script src="Sketchpad.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
