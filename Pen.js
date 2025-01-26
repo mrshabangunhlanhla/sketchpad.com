@@ -1,5 +1,5 @@
 class Pen {
-	constructor(color="#000000", size="5") {
+	constructor(color="#000000", size="1") {
 		this.color = color;
 		this.size = size;
 
